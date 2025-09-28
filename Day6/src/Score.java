@@ -24,5 +24,7 @@ public class Score {
             }
         }
         System.out.println("Highest mark is " +highestMark);
+
+        System.out.println("Commit in feat branch");
     }
 }
