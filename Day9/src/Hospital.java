@@ -29,7 +29,7 @@ public class Hospital {
                     accountCount++;
                     break;
                 case 2:
-                    seeNumberOfPatients(accountCount);
+                    seeNumberOfPatients(patientsDataBase);
                     break;
                 case 3:
                     break;
@@ -42,8 +42,13 @@ public class Hospital {
         }
     }
 
-    public static void seeNumberOfPatients(int count){
+    public static void seeNumberOfPatients(Patient[] patients){
+        int count = 0;
+        for(Patient patientsArr : patients){
+            if(patientsArr != null && patientsArr.patientAge >= 13 && patientsArr.patientAge <= 19){
+                count++;
+            }
+        }
         System.out.println("Number of registered persons are : " +count);
     }
-
 }
