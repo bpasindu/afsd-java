@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-        //copy of original data sheet
+        //copy of original data sheet === java object
         Student std1 = new Student();
         std1.name = "Pasindu";
         std1.age= 22;
@@ -15,5 +15,21 @@ public class Test {
         std2.address = "Ragama";
         std2.isSmoke = true;
         std2.salary = 20000;
+
+        //Aqua
+        Vehicle aqua = new Vehicle();
+        aqua.brand = "Toyota";
+        aqua.name = "Aqua";
+        aqua.engineType = "Hybrid";
+        aqua.power = 99;
+        aqua.topSpeed = 180;
+
+        //BMW i8
+        Vehicle i8 = new Vehicle();
+        i8.brand = "BMW";
+        i8.name= "i8";
+        i8.engineType = "Hybrid";
+        i8.power = 370;
+        i8.topSpeed = 250;
     }
 }

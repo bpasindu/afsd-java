@@ -1,5 +1,5 @@
 
-// original common data sheet
+// original common data sheet ---> java class
 public class Student {
     String name;
     int age;
